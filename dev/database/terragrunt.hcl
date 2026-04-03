@@ -10,9 +10,11 @@ dependency "server" {
   config_path = "../server"
 
   mock_outputs = {
+    server_name       = "mock-server"
+    port              = 0
     connection_string = "mock-server:0000"
+    deploy_info       = "mock"
   }
-  mock_outputs_allowed_terraform_commands = ["validate", "plan"]
 }
 
 inputs = {
